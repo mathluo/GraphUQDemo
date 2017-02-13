@@ -1,0 +1,14 @@
+fid = plume_fidelity(0.5); 
+mp = zeros( 286720 , 1); 
+mp(fid{1}) = 1; 
+mp(fid{2}) = 2; 
+mp = convert_2d_plume(mp); 
+tile(mp); 
+disp(['Total of ', num2str(numel(fid{1})*2), 'Fidelity Points']); 
+fid = plume_fidelity(0.1); 
+mp = zeros( 286720 , 1); 
+mp(fid{1}) = 1; 
+mp(fid{2}) = 2; 
+mp = convert_2d_plume(mp); 
+tile(mp); 
+disp(['Total of ', num2str(numel(fid{1})*2), 'Fidelity Points']); 
